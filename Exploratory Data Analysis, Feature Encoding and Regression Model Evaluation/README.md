@@ -60,19 +60,19 @@ Results:
 | Model             | RMSE | R²   |
 | ----------------- | ---- | ---- |
 | Linear Regression | 5796 | 0.78 |
-| SVR               | 6922 | 0.69 |
+| SVR               | 4536 | 0.86 |
 
-The Linear Regression model produced better predictions overall, especially for higher charge values.
+The Support Vector model produced better predictions overall, especially for higher charge values.
 
 ## Key Insights
 
 * Smoking is the most influential factor affecting insurance charges.
 * Higher BMI values are associated with slightly higher healthcare costs.
-* Linear Regression performs better for predicting higher insurance charges, while SVR shows more variability in predictions.
+* Support regression performs better for predicting higher insurance charges, while MLR shows more variability in predictions.
 
 ## Conclusion
 
-The analysis shows that simple linear models can perform well when predicting medical insurance costs in this dataset. Smoking status, BMI, and age appear to be the most influential variables affecting healthcare charges.
+The analysis shows that Support vector machine models can perform well when predicting medical insurance costs in this dataset. Smoking status, BMI, and age appear to be the most influential variables affecting healthcare charges.
 
 ## Technologies Used
 
