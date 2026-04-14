@@ -72,11 +72,9 @@ Three classification models were trained to predict asteroid hazard status:
 | --- | --- | --- |
 | Logistic Regression | 0.8433 | 0.1170 |
 | K-Nearest Neighbors (k=6) | 0.8305 | 0.2564 |
-| Support Vector Machine (RBF) | 0.8486 | 0.4501 | 
+| Support Vector Machine (RBF) | 0.7004 | 0.4501 |
 
-**SVM** achieved the highest accuracy. It was optimized using `GridSearchCV` over `C` and `gamma` parameters, with `class_weight='balanced'` to handle class imbalance.
-
-**KNN** used k=6, selected by plotting training vs. test accuracy across k=1 to k=24.
+**KNN** achieved the highest accuracy. used k=6, selected by plotting training vs. test accuracy across k=1 to k=24
 
 ---
 
@@ -92,7 +90,7 @@ A correlation heatmap was generated on the training features to understand relat
 
 ## Key Insights
 
-- **SVM with RBF kernel** is the best-performing classifier on this dataset.
+- **KNN with 6 neighbors** is the best-performing classifier on this dataset.
 - The dataset is **imbalanced** — accuracy alone can be misleading. Future iterations should also report F1-score.
 - The regression task (predicting velocity) is poorly suited to the available features — R² never exceeds 0.24.
 - The `class_weight='balanced'` parameter in SVM helps compensate for the class imbalance in hazard prediction.
